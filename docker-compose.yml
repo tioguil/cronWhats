@@ -1,0 +1,11 @@
+services:
+  cronwhats:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data:/app/data
+      - ./whatsapp-session:/app/.wwebjs_auth
+    shm_size: "1gb"

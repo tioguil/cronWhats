@@ -1,0 +1,10 @@
+node_modules
+.next
+dist
+.git
+.env
+data
+whatsapp-session
+.wwebjs_auth
+.wwebjs_cache
+npm-debug.log
